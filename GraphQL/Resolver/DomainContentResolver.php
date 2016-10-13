@@ -54,7 +54,7 @@ class DomainContentResolver
         return $this->resolveDomainContentItems('blog_post');
     }
 
-    private function resolveDomainContentItems($contentTypeIdentifier)
+    public function resolveDomainContentItems($contentTypeIdentifier)
     {
         return array_map(
             function (Content $content) {

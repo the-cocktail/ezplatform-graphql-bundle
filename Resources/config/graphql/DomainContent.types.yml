@@ -10,44 +10,44 @@ DomainContent:
                 type: "Content"
         resolveType: "@=resolver('DomainContentType', [value])"
 
-ArticleContent:
-    type: "object"
-    config:
-        fields:
-            _content:
-                description: "Underlying content item"
-                type: "Content"
-            title:
-                type: "TextLineFieldValue"
-            short_title:
-                type: "TextLineFieldValue"
-            author:
-                type: "AuthorFieldValue"
-            intro:
-                type: "RichTextFieldValue"
-            body:
-                type: "RichTextFieldValue"
-            enable_comments:
-                type: "TextLineFieldValue"
-            image:
-                type: "ImageFieldValue"
-        interfaces: [DomainContent]
-
-BlogPostContent:
-    type: "object"
-    config:
-        fields:
-            _content:
-                description: "Underlying content item"
-                type: "Content"
-            title:
-                type: "TextLineFieldValue"
-            author:
-                type: "AuthorFieldValue"
-            intro:
-                type: "RichTextFieldValue"
-            body:
-                type: "RichTextFieldValue"
-            image:
-                type: "ImageFieldValue"
-        interfaces: [DomainContent]
+#ArticleContent:
+#    type: "object"
+#    config:
+#        fields:
+#            _content:
+#                description: "Underlying content item"
+#                type: "Content"
+#            title:
+#                type: "TextLineFieldValue"
+#            short_title:
+#                type: "TextLineFieldValue"
+#            author:
+#                type: "AuthorFieldValue"
+#            intro:
+#                type: "RichTextFieldValue"
+#            body:
+#                type: "RichTextFieldValue"
+#            enable_comments:
+#                type: "TextLineFieldValue"
+#            image:
+#                type: "ImageFieldValue"
+#        interfaces: [DomainContent]
+#
+#BlogPostContent:
+#    type: "object"
+#    config:
+#        fields:
+#            _content:
+#                description: "Underlying content item"
+#                type: "Content"
+#            title:
+#                type: "TextLineFieldValue"
+#            author:
+#                type: "AuthorFieldValue"
+#            intro:
+#                type: "RichTextFieldValue"
+#            body:
+#                type: "RichTextFieldValue"
+#            image:
+#                type: "ImageFieldValue"
+#        interfaces: [DomainContent]

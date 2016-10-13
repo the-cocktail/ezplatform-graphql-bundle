@@ -1,4 +1,11 @@
 services:
+    bd_ezplatform_graphql.command.generate_platform_domain_schema:
+        class: BD\EzPlatformGraphQLBundle\Command\GeneratePlatformDomainTypesCommand
+        arguments:
+            - "@ezpublish.api.repository"
+        tags:
+            -  { name: console.command }
+
     bd_ezplatform_graphql.graph.resolver.location:
         class: BD\EzPlatformGraphQLBundle\GraphQL\Resolver\LocationResolver
         arguments:
@@ -38,6 +45,7 @@ services:
         tags:
             - { name: overblog_graphql.resolver, alias: "DomainArticles", method: "resolveDomainArticles" }
             - { name: overblog_graphql.resolver, alias: "DomainBlogPosts", method: "resolveDomainBlogPosts" }
+            - { name: overblog_graphql.resolver, alias: "DomainContentItemsByTypeIdentifier", method: "resolveDomainContentItems" }
 
     bd_ezplatform_graphql.graph.resolver.user:
         class: BD\EzPlatformGraphQLBundle\GraphQL\Resolver\UserResolver
