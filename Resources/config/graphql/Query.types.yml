@@ -74,6 +74,12 @@ Query:
                     query:
                         type: "ContentSearchQuery!"
                 resolve: "@=resolver('SearchContent', [args])"
+            articles:
+                type: "[ArticleContent]"
+                resolve: "@=resolver('DomainArticles')"
+            blog_posts:
+                type: "[BlogPostContent]"
+                resolve: "@=resolver('DomainBlogPosts')"
 
 ContentSearchQuery:
     type: "input-object"
