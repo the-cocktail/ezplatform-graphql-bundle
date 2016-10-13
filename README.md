@@ -32,6 +32,11 @@ overblog_graphql:
         schema:
             query: Query
             mutation: PlatftormMutation
+        builders:
+            field:
+                -
+                    alias: "ContentDomainList"
+                    class: "BD\\EzPlatformGraphQLBundle\\GraphQL\\Builder\\DomainFieldBuilder"
 ```
 
 Add the GraphQL server route to `app/config/routing.yml`:
