@@ -74,8 +74,10 @@ services:
         class: BD\EzPlatformGraphQLBundle\GraphQL\Resolver\SearchResolver
         arguments:
             - "@ezpublish.api.service.search"
+            - "@ezpublish.query_type.registry"
         tags:
             - { name: overblog_graphql.resolver, alias: "SearchContent", method: "searchContent" }
+            - { name: overblog_graphql.resolver, alias: "SearchContentWithQueryType", method: "searchContentWithQueryType" }
 
     bd_ezplatform_graphql.graph.resolver.field_value.richtext:
         class: BD\EzPlatformGraphQLBundle\GraphQL\Resolver\RichTextResolver

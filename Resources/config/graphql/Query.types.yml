@@ -74,6 +74,21 @@ Query:
                     query:
                         type: "ContentSearchQuery!"
                 resolve: "@=resolver('SearchContent', [args])"
+            queries:
+                type: "QueryType"
+                resolve: "[]"
+
+QueryType:
+    type: "object"
+    config:
+        fields:
+            latestContent:
+                type: "[Content]"
+                args:
+                    contentType:
+                        type: "[String]"
+                        description: "Identifiers of content types to filter on."
+                resolve: "@=resolver('SearchContentWithQueryType', ['latestContent', args])"
 
 ContentSearchQuery:
     type: "input-object"
