@@ -1,0 +1,8 @@
+extensions:
+    Memio\SpecGen\MemioSpecGenExtension: ~
+
+suites:
+    ezplatform_graphql:
+        namespace: BD\EzPlatformGraphQLBundle
+        psr4_prefix: BD\EzPlatformGraphQLBundle
+        src_path: .

@@ -11,7 +11,8 @@
     ],
     "require": {
       "ezsystems/ezpublish-kernel": "^6.0",
-      "overblog/graphql-bundle": "^0.6.0"
+      "overblog/graphql-bundle": "^0.6.0",
+        "phpspec/phpspec": "^3.2"
     },
     "autoload": {
         "psr-4": {
@@ -22,5 +23,11 @@
         "branch-alias": {
             "dev-master": "0.1.x-dev"
         }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "require-dev": {
+        "memio/spec-gen": "^0.6"
     }
 }
