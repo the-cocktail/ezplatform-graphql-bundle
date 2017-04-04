@@ -10,9 +10,13 @@
         }
     ],
     "require": {
-      "ezsystems/ezpublish-kernel": "^6.0",
-      "overblog/graphql-bundle": "^0.6.0",
-        "phpspec/phpspec": "^3.2"
+        "ezsystems/ezpublish-kernel": "^6.0",
+        "overblog/graphql-bundle": "^0.6.0",
+        "limenius/liform-bundle": "^0.8"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^3.2",
+        "memio/spec-gen": "^0.6"
     },
     "autoload": {
         "psr-4": {
@@ -26,8 +30,5 @@
     },
     "config": {
         "bin-dir": "bin"
-    },
-    "require-dev": {
-        "memio/spec-gen": "^0.6"
     }
 }

@@ -1,3 +1,4 @@
+```
 mutation {
   createSection(
     input: {
@@ -10,3 +11,4 @@ mutation {
     name
   }
 }
+```
