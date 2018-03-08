@@ -10,7 +10,7 @@
         },
         {
             "name": "The Cocktail",
-            "email": "ruby@the-cocktail.com",
+            "email": "ruby@the-cocktail.com"
         }
     ],
     "require": {
